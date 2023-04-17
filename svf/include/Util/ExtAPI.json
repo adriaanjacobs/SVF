@@ -3688,7 +3688,7 @@
     "dlopen":   {
         "return":  "void *",
         "arguments":  "(const char *, int)",
-        "type": "EFT_NOSTRUCT_ALLOC",
+        "type": "EFT_NOOP",
         "overwrite_app_function": 1,
         "AddrStmt": {
 			"src": "Obj",
