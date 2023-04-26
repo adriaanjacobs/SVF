@@ -3689,11 +3689,7 @@
         "return":  "void *",
         "arguments":  "(const char *, int)",
         "type": "EFT_NOOP",
-        "overwrite_app_function": 1,
-        "AddrStmt": {
-			"src": "Obj",
-			"dst": "Ret"
-		}
+        "overwrite_app_function": 1
     },
     "gai_strerror": {
         "return":  "const char *",
