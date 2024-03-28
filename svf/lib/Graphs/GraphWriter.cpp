@@ -39,6 +39,7 @@ std::string SVF::DOT::EscapeStr(const std::string &Label)
                 default:
                     break;
                 }
+            [[clang::fallthrough]];
         case '{':
         case '}':
         case '<':

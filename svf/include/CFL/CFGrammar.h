@@ -325,19 +325,19 @@ public:
         return secondRHSToProds;
     }
 
-    const bool hasProdsFromFirstRHS(const Symbol sym) const
+    bool hasProdsFromFirstRHS(const Symbol sym) const
     {
         auto it = firstRHSToProds.find(sym);
         return it!=firstRHSToProds.end();
     }
 
-    const bool hasProdsFromSingleRHS(const Symbol sym) const
+    bool hasProdsFromSingleRHS(const Symbol sym) const
     {
         auto it = singleRHSToProds.find(sym);
         return it!=singleRHSToProds.end();
     }
 
-    const bool hasProdsFromSecondRHS(const Symbol sym) const
+    bool hasProdsFromSecondRHS(const Symbol sym) const
     {
         auto it = secondRHSToProds.find(sym);
         return it!=secondRHSToProds.end();
@@ -385,7 +385,7 @@ public:
     void dump(std::string fileName) const;
 
 
-    const inline u32_t num_generator()
+    inline u32_t num_generator()
     {
         return newTerminalSubscript++;
     }
