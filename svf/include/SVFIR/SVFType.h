@@ -58,7 +58,7 @@ protected:
 
     }
 
-    inline const u32_t getStinfoId() const
+    inline  u32_t getStinfoId() const
     {
         return StInfoId;
     }
@@ -380,7 +380,7 @@ protected:
     /**
      * Set return type of function, this is used when loading from DB
      */
-    const void setReturnType(const SVFType* rt)
+    void setReturnType(const SVFType* rt)
     {
         retTy = rt;
     }
@@ -478,7 +478,7 @@ class SVFArrayType : public SVFType
     friend class GraphDBClient;
 
 protected:
-    const unsigned getNumOfElement() const
+    unsigned getNumOfElement() const
     {
         return numOfElement;
     }

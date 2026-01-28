@@ -755,7 +755,7 @@ const std::string SVFValue::valueOnlyToString() const
     return rawstr.str();
 }
 
-const bool SVFValue::hasLLVMValue() const
+bool SVFValue::hasLLVMValue() const
 {
     return LLVMModuleSet::getLLVMModuleSet()->hasLLVMValue(this);
 

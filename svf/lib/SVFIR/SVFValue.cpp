@@ -47,7 +47,7 @@ const std::string SVFValue::valueOnlyToString() const
 }
 
 __attribute__((weak))
-const bool SVFValue::hasLLVMValue() const
+bool SVFValue::hasLLVMValue() const
 {
     assert("SVFBaseNode::hasLLVMValue should be implemented or supported by fronted" && false);
     abort();

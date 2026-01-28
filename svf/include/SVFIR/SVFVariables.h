@@ -476,7 +476,7 @@ public:
         return ap;
     }
 
-    inline const void setAccessPath(const AccessPath* ap)
+    inline void setAccessPath(const AccessPath* ap)
     {
         this->ap = *ap;
     }

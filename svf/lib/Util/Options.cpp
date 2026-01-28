@@ -164,7 +164,7 @@ const Option<bool> Options::OCGDotGraph(
 Option<bool> Options::HandBlackHole(
     "blk",
     "Handle blackhole edge",
-    false
+    true
 );
 
 const Option<bool> Options::FirstFieldEqBase(
