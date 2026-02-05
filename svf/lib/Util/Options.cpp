@@ -41,7 +41,7 @@ const OptionMap<NodeIDAllocator::Strategy> Options::NodeAllocStrat(
 const Option<u32_t> Options::MaxFieldLimit(
     "field-limit",
     "Maximum number of fields for field sensitive analysis",
-    512
+    0
 );
 
 const OptionMap<BVDataPTAImpl::PTBackingType> Options::ptDataBacking(
@@ -178,7 +178,7 @@ const Option<bool> Options::FirstFieldEqBase(
 const Option<bool> Options::ContextInsensitive(
     "ci-svfg",
     "Reduce SVFG into a context-insensitive one",
-    false
+    true
 );
 
 const Option<bool> Options::KeepAOFI(
